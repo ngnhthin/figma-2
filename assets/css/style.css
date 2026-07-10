@@ -48,15 +48,15 @@ a {
   margin-right: auto;
   max-width: calc(100% - 48px);
 }
-.line-clamp{
-  display: -webkit-line-clamp: var(--line-clamp, 1);
+.line-clamp {
+  display: -webkit-line-clamp var(--line-clamp, 1);
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
-.line-clamp .line-2{
+.line-clamp .line-2 {
   --line-clamp: 2;
 }
-.break-all{
+.break-all {
   word-break: break-all;
 }
 /* =============== header ================ */
@@ -352,4 +352,52 @@ a {
 .popular .course-item .btn-book:hover {
   background: var(--primary-color);
   cursor: pointer;
+}
+/* ============= feedback ============= */
+.feedback {
+  margin-top: 135px;
+  padding: 96px 0;
+  background: #2e2100;
+}
+.feeadback-item {
+  display: flex;
+}
+.feeadback-item .avatar {
+  object-fit: cover;
+}
+.feeadback-item .info .member-name {
+  color: #f7f7f7;
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 1.42; /* 141.667% */
+}
+.feeadback-item .info .desc {
+  color: #bfbcb2;
+  font-size: 1.4rem;
+  line-height: 1.86; /* 185.714% */
+}
+.feeadback-item .dots {
+  display: flex;
+  margin-top: 28px;
+}
+.feeadback-item .dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 6px;
+  background: #634700;
+  cursor: pointer;
+}
+.feeadback-item .dot.active {
+  background: #ffb900;
+  cursor: default;
+}
+.feeadback-item .content {
+  width: 66%;
+  margin-left: auto;
+}
+.feeadback-item blockquote {
+  color: #fff;
+  font-size: 2.6rem;
+  font-style: italic;
+  line-height: 1.54; /* 153.846% */
 }
