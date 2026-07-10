@@ -359,8 +359,14 @@ a {
   padding: 96px 0;
   background: #2e2100;
 }
-.feeadback-item {
+.feedback-list {
   display: flex;
+  overflow: hidden;
+}
+.feeadback-item {
+  width: 100%;
+  display: flex;
+  flex-shrink: 0;
 }
 .feeadback-item .avatar {
   object-fit: cover;
@@ -400,4 +406,5 @@ a {
   font-size: 2.6rem;
   font-style: italic;
   line-height: 1.54; /* 153.846% */
+  /* margin-left: auto; */
 }
