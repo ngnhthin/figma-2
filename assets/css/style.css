@@ -13,7 +13,7 @@ body {
   font-size: 1.6rem;
   font-family: "Poppins", sans-serif;
 }
-/* common */
+/*================= common =================*/
 a {
   text-decoration: none;
 }
@@ -48,8 +48,18 @@ a {
   margin-right: auto;
   max-width: calc(100% - 48px);
 }
-
-/* header */
+.line-clamp{
+  display: -webkit-line-clamp: var(--line-clamp, 1);
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.line-clamp .line-2{
+  --line-clamp: 2;
+}
+.break-all{
+  word-break: break-all;
+}
+/* =============== header ================ */
 
 .header {
   background: #f6ecd2;
@@ -282,6 +292,7 @@ a {
   margin-top: 55px;
 }
 .popular .course-item {
+  flex: 1;
   border-radius: 12px;
   border: 1px solid #e2dfda;
   background: #fff;
