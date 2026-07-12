@@ -461,3 +461,82 @@ a {
   width: 470px;
   height: 440px;
 }
+/* ==================== blogs ====================== */
+.blogs {
+  margin-top: 135px;
+  padding: 96px o;
+  background: #fffcf4;
+}
+.blogs .blog-top {
+  text-align: center;
+}
+.blogs .blog-top .desc {
+  margin: auto;
+  width: 448px;
+  color: #696262;
+  font-size: 1.6rem;
+  line-height: 1.75; /* 175% */
+}
+.blogs .blog-list {
+  gap: 30px;
+  display: flex;
+  margin-top: 55px;
+}
+.blogs .item {
+  width: 33.33%;
+}
+.blogs .item:hover {
+  box-shadow: 0 16px 32px 0 rgba(0, 0, 0, 0.05);
+}
+.blogs .item .thumb {
+  border-radius: 16px 16px 0 0;
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+.blogs .item .info {
+  padding: 20px 20px 28px;
+}
+.blogs .item .date {
+  position: relative;
+  padding-bottom: 12px;
+  display: inline-flex;
+  align-items: center;
+  color: #5f5b53;
+  font-size: 1.4rem;
+  line-height: 1.86; /* 185.714% */
+}
+.blogs .item .date::before {
+  content: "";
+  display: inline-block;
+  margin-right: 4px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--primary-color);
+}
+.blogs .item .date::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: -27px;
+  content: "";
+  display: inline-block;
+  width: 160px;
+  height: 1px;
+  border-radius: 0.5px;
+  background: #e2dfda;
+}
+.blogs .item .title {
+  margin-top: 12px;
+  color: #171100;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1.75; /* 175% */
+}
+.blogs .item .btn {
+  margin-top: 12px;
+}
+.blogs .item .btn:hover {
+  background: var(--primary-color);
+}
